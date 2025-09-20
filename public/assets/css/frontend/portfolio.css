@@ -1,0 +1,429 @@
+
+ body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+  }
+/* Navbar height fixed */
+.navbar {
+    height: 70px;
+}
+
+.navbar .navbar-brand img {
+    height: 100%;
+    max-height: 70px;
+    width: auto;
+}
+
+/* Mobile Offcanvas Custom */
+.offcanvas.offcanvas-end {
+    width: 250px !important; /* !important diye override */
+    background-color: #000;
+    color: #fff;
+   
+}
+
+.offcanvas .nav-link {
+    color: #fff;
+    padding: 5px 5px;
+    
+}
+
+.offcanvas .nav-link:hover {
+    color: #0d6efd; /* hover color */
+    
+}
+
+/* Offcanvas Close Button */
+.offcanvas .btn-close {
+    filter: invert(1); /* White color for dark background */
+}
+.offcanvas .nav-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* halka white */
+
+}
+.offcanvas .nav-item:last-child {
+    border-bottom: none; /* last item er border remove */
+}
+ .btn-close:focus {
+      box-shadow: none;
+      outline: none;
+   }
+
+
+
+.section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.card {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn {
+  color: #ffffff;
+  background-color: #0d6efd;
+  border: none;
+}
+
+
+/* Back to Top + Theme Button */
+#backToTop,
+#themeToggle {
+  z-index: 9999;
+}
+
+/* About section */
+#about {
+  background-color: #ffffff;
+}
+
+
+/* skill er jonno */
+.skill-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+.progress-bar {
+  transition: width 1.5s ease-in-out;
+}
+
+
+/* education & exprince er jonno */
+
+.timeline-item {
+  position: relative;
+  padding-left: 20px;
+  border-left: 3px solid #dee2e6;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #0d6efd;
+  border-radius: 50%;
+}
+
+
+/* services er jonno */
+
+.service-card {
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(2, 118, 242, 0.2);
+  background-color: #c8d8f0; /* Light blue background on hover */
+}
+
+/* cintact er jonno */
+
+.btn-primary {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05);    /* Slightly grow on hover */
+}
+
+/* socail link er jonno */
+
+  .social-icon {
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-decoration: none;
+  }
+
+  .social-icon.facebook   { background-color: #3b5998; }
+  .social-icon.whatsapp   { background-color: #25D366; }
+  .social-icon.instagram  { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+  .social-icon.linkedin   { background-color: #0077b5; }
+  .social-icon.github     { background-color: #333; }
+
+  .social-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+
+  .hover-effect:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+  }
+
+
+/* navbar er jonno */
+  /* Navbar brand */
+  .navbar-brand span {
+    font-weight: 600;
+  }
+
+  /* Navbar links */
+  .nav-link.nav-animate {
+    font-weight: 500;
+    color: #333;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  /* Hover underline effect */
+  .nav-link.nav-animate::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #0d6efd;
+    transition: width 0.3s ease;
+  }
+
+  .nav-link.nav-animate:hover::after {
+    width: 100%;
+  }
+
+  .nav-link.nav-animate:hover {
+    color: #0d6efd;
+  }
+
+  /* Active link: color + permanent underline */
+  .nav-link.nav-animate.active {
+    color: #0d6efd;           
+  }
+
+  .nav-link.nav-animate.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;              
+    height: 2px;              
+    left: 0;
+    bottom: 0;
+    background-color: #0d6efd; 
+  }
+
+  /* Navbar toggler */
+  .navbar-toggler {
+    padding: 0.375rem 0.75rem;
+  }
+ /* navbar end */
+
+  /* hero er font er jonno */
+
+   .custom-heading {
+    font-family: 'Poppins', sans-serif; /* Beautiful modern font */
+    font-weight: 500;
+    line-height: 1.3;
+    color: #333;
+  }
+
+  .custom-heading strong {
+    font-weight: 700;
+    color: #0d6efd; /* Bootstrap primary blue */
+  }
+
+  /* project er jonnno */
+
+ /* Project Card */
+#projects .project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+#projects .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+#projects .project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+#projects .project-card:hover .project-img {
+  transform: scale(1.05);
+}
+
+/* Overlay (hidden by default) */
+#projects .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Show overlay on hover */
+#projects .project-card:hover .overlay {
+  transform: translateY(0);
+}
+
+/* Title inside overlay */
+#projects .overlay-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
+/* project er image er jonno */
+
+.project-img-container {
+  height: 250px;
+  overflow: hidden;
+}
+
+
+
+/* Fullscreen Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff; /* White background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+}
+
+/* Content Center */
+.preloader-content {
+  text-align: center;
+}
+
+/* Spinner Container */
+.loader-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+/* Outer spinner */
+.spinner-outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #0d6efd; /* Primary Blue */
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+/* Logo inside spinner */
+.logo-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+   transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  animation: bounce 2s infinite;
+}
+
+.logo-center img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+/* Welcome Text */
+.welcome-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+   margin-top: 20px;
+  color: #333;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+/* Animations */
+@keyframes bounce {
+  0%, 100% { transform: translate(-50%, -50%); }
+  50% { transform: translate(-50%, -60%); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+        /* Hide after load */
+#preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+/* Remove focus/outline blue border from close button */
+.alert .btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+
+.navbar {
+  min-height: 70px;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* forces vertical centering */
+}
+.navbar-toggler {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
